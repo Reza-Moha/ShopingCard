@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/build/tailwind.css" />
+    <title>ShopCard-Reza_Mohammadzadeh</title>
+  </head>
+  <body>
+    <header
+      class="w-full h-14 bg-white/40 fixed top-0 left-0 shadow backdrop-blur-md z-50 px-10"
+    >
+      <div class="container mx-auto h-14">
+        <nav
+          class="w-full h-full flex justify-between items-center text-center px-2"
+        >
+          <span
+            class="select-none text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+          >
+            Shop Card
+          </span>
+          <div class="relative cursor-pointer">
+            <img src="src/icon/bag.png" alt="basket" class="basket !z-50" />
+            <span
+              class="addToCartQuantity absolute leading-5 w-5 h-5 -top-1 text-white -right-2 text-md bg-rose-600 rounded-full"
+              >0</span
+            >
+          </div>
+        </nav>
+      </div>
+      <section
+        style="display: none"
+        class="addToCardSection absolute right-16 top-14 w-[450px] h-auto z-50 rounded shadow px-1 py-3 select-none bg-white"
+      >
+        <header
+          class="grid justify-center items-center text-center grid-rows-1 grid-cols-4 px-2"
+        >
+          <h2
+            class="text-center text-xl col-span-3 select-none text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+          >
+            Your Card
+          </h2>
+          <div class="col-span-1 flex justify-end">
+            <img
+              class="closeBtn cursor-pointer"
+              src="./src/icon/close.png"
+              alt="closeBtn"
+            />
+          </div>
+        </header>
+        <main
+          class="addToCardContainer p-2 w-full max-h-[350px] overflow-y-scroll"
+        ></main>
+        <footer class="mt-10 w-full h-20 bg-indigo-300 text-slate-800 rounded">
+          <section
+            class="w-full h-full flex justify-center items-center text-center gap-x-2 px-1"
+          >
+            <div class="flex gap-x-2 justify-center items-center text-center">
+              <div>
+                <h6>TotalPrice:</h6>
+              </div>
+              <span class="CardTotalPrice text-xl font-semibold"></span>
+            </div>
+            <div
+              class="flex justify-center items-center text-center border-l border-indigo-400 px-1 h-3/4"
+            >
+              <h5>Items:</h5>
+              <span class="CardItems text-xl font-semibold bg-tea">0</span>
+            </div>
+            <div
+              class="border-l border-indigo-400 px-1 h-3/4 leading-10 flex justify-center items-center text-center"
+            >
+              <button
+                class="clearCard bg-white border border-indigo-500 px-2 rounded-md shadow font-semibold hover:bg-rose-400 hover:text-white transition-all ease-linear duration-100 delay-100"
+              >
+                Clear Card
+              </button>
+            </div>
+            <div
+              class="border-l border-indigo-400 px-1 h-3/4 leading-10 flex justify-center items-center text-center"
+            >
+              <button
+                class="bg-indigo-100 border border-indigo-500 px-2 rounded-md shadow font-semibold hover:bg-teal-600 hover:text-white transition-all ease-linear duration-100 delay-100"
+              >
+                Confirm
+              </button>
+            </div>
+          </section>
+        </footer>
+      </section>
+    </header>
+    <div class="container mx-auto p-2">
+      <main class="w-full h-full relative top-16 select-none">
+        <section
+          class="productsContainer w-full h-full mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-5"
+        ></section>
+      </main>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

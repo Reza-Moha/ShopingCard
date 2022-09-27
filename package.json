@@ -1,0 +1,22 @@
+{
+  "name": "shopingcard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "postcss ./src/main.css -o ./public/build/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "postcss-cli": "^10.0.0",
+    "prettier": "2.7.1",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "toastify-js": "^1.12.0"
+  }
+}

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body,
+  html {
+    @apply w-full h-full bg-indigo-50;
+  }
+}
+
+@layer components {
+  .addToCardBtn {
+    @apply rounded-md shadow text-slate-50 px-2 hover:scale-105 hover:shadow-md;
+  }
+}
